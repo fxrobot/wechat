@@ -1,4 +1,4 @@
-module wechat/v2
+module github.com/fxrobot/wechat
 
 go 1.13
 
