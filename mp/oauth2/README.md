@@ -11,11 +11,11 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/chanxuehong/rand"
+	"github.com/fxrobot/rand"
 	"github.com/chanxuehong/session"
 	"github.com/chanxuehong/sid"
-	mpoauth2 "gopkg.in/chanxuehong/wechat.v2/mp/oauth2"
-	"gopkg.in/chanxuehong/wechat.v2/oauth2"
+	mpoauth2 "github.com/fxrobot/wechat/mp/oauth2"
+	"github.com/fxrobot/wechat/oauth2"
 )
 
 const (

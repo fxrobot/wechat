@@ -3,7 +3,7 @@ package poi
 import (
 	"fmt"
 
-	"gopkg.in/chanxuehong/wechat.v2/mp/core"
+	"github.com/fxrobot/wechat/mp/core"
 )
 
 type ListResult struct {

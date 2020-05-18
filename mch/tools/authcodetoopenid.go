@@ -1,8 +1,8 @@
 package tools
 
 import (
-	"gopkg.in/chanxuehong/wechat.v2/mch/core"
-	"gopkg.in/chanxuehong/wechat.v2/util"
+	"github.com/fxrobot/wechat/mch/core"
+	"github.com/fxrobot/wechat/util"
 )
 
 // AuthCodeToOpenId 授权码查询openid.

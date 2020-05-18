@@ -7,8 +7,8 @@ import (
 	"net/url"
 	"os"
 
-	"gopkg.in/chanxuehong/wechat.v2/internal/debug/api"
-	"gopkg.in/chanxuehong/wechat.v2/util"
+	"github.com/fxrobot/wechat/internal/debug/api"
+	"github.com/fxrobot/wechat/util"
 )
 
 // 二维码图片的URL, 可以通过此URL下载二维码 或者 在线显示此二维码.

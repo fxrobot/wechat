@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"strconv"
 
-	"gopkg.in/chanxuehong/wechat.v2/internal/debug/callback"
-	"gopkg.in/chanxuehong/wechat.v2/internal/util"
+	"github.com/fxrobot/wechat/internal/debug/callback"
+	"github.com/fxrobot/wechat/internal/util"
 )
 
 const (

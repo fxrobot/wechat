@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"time"
 
-	"gopkg.in/chanxuehong/wechat.v2/mch/core"
-	"gopkg.in/chanxuehong/wechat.v2/util"
+	"github.com/fxrobot/wechat/mch/core"
+	"github.com/fxrobot/wechat/util"
 )
 
 // Report 交易保障.

@@ -3,8 +3,8 @@ package device
 import (
 	"errors"
 
-	"gopkg.in/chanxuehong/wechat.v2/internal/util"
-	"gopkg.in/chanxuehong/wechat.v2/mp/core"
+	"github.com/fxrobot/wechat/internal/util"
+	"github.com/fxrobot/wechat/mp/core"
 )
 
 type SearchQuery struct {

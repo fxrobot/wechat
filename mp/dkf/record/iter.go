@@ -1,7 +1,7 @@
 package record
 
 import (
-	"gopkg.in/chanxuehong/wechat.v2/mp/core"
+	"github.com/fxrobot/wechat/mp/core"
 )
 
 // RecordIterator

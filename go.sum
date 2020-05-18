@@ -1,4 +1,4 @@
-github.com/chanxuehong/rand v0.0.0-20180830053958-4b3aff17f488/go.mod h1:h13adSJmQ5tsaV9bR72eTp7ePXJ2WIWyK6heLeietxA=
-github.com/chanxuehong/util v0.0.0-20200304121633-ca8141845b13 h1:c1vUDbnwvu5d2ucfzXvMzBWzeu5IxPvtESOFPl3CieA=
-github.com/chanxuehong/util v0.0.0-20200304121633-ca8141845b13/go.mod h1:XEYt99iTxMqkv+gW85JX/DdUINHUe43Sbe5AtqSaDAQ=
-gopkg.in/chanxuehong/wechat.v2 v2.0.0-20190402080805-fa408c6cc20d/go.mod h1:HuIcE5yEmuAHBXNX5U4KUQRCki6sXCbLjPauW+ppvI0=
+github.com/fxrobot/rand v1.0.0 h1:V6ru7tomDpPV3aFfHdxPTh+PBdzhYbDuzf+0rR9f+sE=
+github.com/fxrobot/rand v1.0.0/go.mod h1:MTlYX4XceE2+DBWzKa5TTW7gL7sRtNcGI/3HpCCo3no=
+github.com/fxrobot/util v1.0.1 h1:IiiMrNsSeWd9932a21mHMrH/F1dFwMVAiJ/DhMXs5b8=
+github.com/fxrobot/util v1.0.1/go.mod h1:bOZNF8vCJAefLkE5PjNx+I41YWVwZ5CBr1/nX38X684=

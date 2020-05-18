@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"gopkg.in/chanxuehong/wechat.v2/mch/core"
-	wechatutil "gopkg.in/chanxuehong/wechat.v2/util"
+	"github.com/fxrobot/wechat/mch/core"
+	wechatutil "github.com/fxrobot/wechat/util"
 )
 
 // Refund 申请退款.

@@ -17,10 +17,10 @@ import (
 	"unicode"
 	"unsafe"
 
-	"github.com/chanxuehong/util/security"
+	"github.com/fxrobot/util/security"
 
-	"gopkg.in/chanxuehong/wechat.v2/internal/debug/callback"
-	"gopkg.in/chanxuehong/wechat.v2/internal/util"
+	"github.com/fxrobot/wechat/internal/debug/callback"
+	"github.com/fxrobot/wechat/internal/util"
 )
 
 // Server 用于处理微信服务器的回调请求, 并发安全!

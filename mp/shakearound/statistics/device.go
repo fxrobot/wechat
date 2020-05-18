@@ -1,8 +1,8 @@
 package statistics
 
 import (
-	"gopkg.in/chanxuehong/wechat.v2/mp/core"
-	"gopkg.in/chanxuehong/wechat.v2/mp/shakearound/device"
+	"github.com/fxrobot/wechat/mp/core"
+	"github.com/fxrobot/wechat/mp/shakearound/device"
 )
 
 // 以设备为维度的数据统计接口
