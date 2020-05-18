@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/chanxuehong/wechat/mch/core"
-	wechatutil "github.com/chanxuehong/wechat/util"
+	"github.com/fxrobot/wechat/mch/core"
+	wechatutil "github.com/fxrobot/wechat/util"
 )
 
 // OrderQuery 查询订单.

@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/chanxuehong/wechat/mp/core"
+	"github.com/fxrobot/wechat/mp/core"
 )
 
 type ImageInfo struct {

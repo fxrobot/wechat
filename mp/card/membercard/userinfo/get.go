@@ -1,8 +1,8 @@
 package userinfo
 
 import (
-	"github.com/chanxuehong/wechat/mp/card/code"
-	"github.com/chanxuehong/wechat/mp/core"
+	"github.com/fxrobot/wechat/mp/card/code"
+	"github.com/fxrobot/wechat/mp/core"
 )
 
 type CustomField struct {
@@ -11,9 +11,9 @@ type CustomField struct {
 }
 
 type UserInfo struct {
-	OpenID          string        `json:"openid"`
-	Nickname        string        `json:"nickname"`
-	Sex             string        `json:"sex"`
+	openid          string        `json:"openid"`
+	nickname        string        `json:"nickname"`
+	sex             string        `json:"sex"`
 	CustomFieldList []CustomField `json:"custom_field_list"`
 }
 

@@ -11,10 +11,10 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/chanxuehong/util"
-	"github.com/chanxuehong/util/security"
+	"github.com/fxrobot/util"
+	"github.com/fxrobot/util/security"
 
-	"github.com/chanxuehong/wechat/internal/debug/mch/callback"
+	"github.com/fxrobot/wechat/internal/debug/mch/callback"
 )
 
 type Server struct {

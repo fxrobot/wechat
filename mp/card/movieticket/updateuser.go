@@ -1,7 +1,7 @@
 package movieticket
 
 import (
-	"github.com/chanxuehong/wechat/mp/core"
+	"github.com/fxrobot/wechat/mp/core"
 )
 
 type UpdateUserParameters struct {

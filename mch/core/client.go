@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/chanxuehong/util"
+	"github.com/fxrobot/util"
 
-	"github.com/chanxuehong/wechat/internal/debug/mch/api"
-	wechatutil "github.com/chanxuehong/wechat/util"
+	"github.com/fxrobot/wechat/internal/debug/mch/api"
+	wechatutil "github.com/fxrobot/wechat/util"
 )
 
 type Client struct {
@@ -155,6 +155,7 @@ RETRY:
 func (clt *Client) postXML(url string, body []byte, reqSignType string) (resp map[string]string, needRetry bool, err error) {
 	api.DebugPrintPostXMLRequest(url, body)
 
+	fmt.Println("[Info]postXML body:", string(body))
 	req, err := http.NewRequest(http.MethodPost, url, bytes.NewReader(body))
 	if err != nil {
 		return nil, false, err
@@ -171,11 +172,15 @@ func (clt *Client) postXML(url string, body []byte, reqSignType string) (resp ma
 	}
 	defer httpResp.Body.Close()
 
+	resp, err = api.DecodeXMLHttpResponse(httpResp.Body)
 	if httpResp.StatusCode != http.StatusOK {
+		fmt.Printf("[Info]postXML DecodeXMLHttpResponse resp: %+v\n", resp)
+		if err != nil {
+			fmt.Println("[Info]postXML DecodeXMLHttpResponse err:", err.Error())
+		}
 		return nil, true, fmt.Errorf("http.Status: %s", httpResp.Status)
 	}
 
-	resp, err = api.DecodeXMLHttpResponse(httpResp.Body)
 	if err != nil {
 		return nil, false, err
 	}
