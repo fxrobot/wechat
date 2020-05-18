@@ -171,11 +171,15 @@ func (clt *Client) postXML(url string, body []byte, reqSignType string) (resp ma
 	}
 	defer httpResp.Body.Close()
 
+	resp, err = api.DecodeXMLHttpResponse(httpResp.Body)
 	if httpResp.StatusCode != http.StatusOK {
+		fmt.Printf("[Error]DecodeXMLHttpResponse resp: %+v\n", resp)
+		if err != nil {
+			fmt.Println("[Error]DecodeXMLHttpResponse err:", err.Error())
+		}
 		return nil, true, fmt.Errorf("http.Status: %s", httpResp.Status)
 	}
 
-	resp, err = api.DecodeXMLHttpResponse(httpResp.Body)
 	if err != nil {
 		return nil, false, err
 	}
