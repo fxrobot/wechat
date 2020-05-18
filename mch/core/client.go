@@ -7,6 +7,7 @@ import (
 	"crypto/md5"
 	"crypto/sha256"
 	"fmt"
+	"io/ioutil"
 	"net/http"
 	"strings"
 	"time"
@@ -174,6 +175,8 @@ func (clt *Client) postXML(url string, body []byte, reqSignType string) (resp ma
 
 	resp, err = api.DecodeXMLHttpResponse(httpResp.Body)
 	if httpResp.StatusCode != http.StatusOK {
+		b, _ := ioutil.ReadAll(httpResp.Body)
+		fmt.Println("[Info]postXML DecodeXMLHttpResponse resp body:", string(b))
 		fmt.Printf("[Info]postXML DecodeXMLHttpResponse resp: %+v\n", resp)
 		if err != nil {
 			fmt.Println("[Info]postXML DecodeXMLHttpResponse err:", err.Error())
