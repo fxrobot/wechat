@@ -155,6 +155,7 @@ RETRY:
 func (clt *Client) postXML(url string, body []byte, reqSignType string) (resp map[string]string, needRetry bool, err error) {
 	api.DebugPrintPostXMLRequest(url, body)
 
+	fmt.Println("[Info]postXML body:", string(body))
 	req, err := http.NewRequest(http.MethodPost, url, bytes.NewReader(body))
 	if err != nil {
 		return nil, false, err
@@ -173,9 +174,9 @@ func (clt *Client) postXML(url string, body []byte, reqSignType string) (resp ma
 
 	resp, err = api.DecodeXMLHttpResponse(httpResp.Body)
 	if httpResp.StatusCode != http.StatusOK {
-		fmt.Printf("[Error]DecodeXMLHttpResponse resp: %+v\n", resp)
+		fmt.Printf("[Info]postXML DecodeXMLHttpResponse resp: %+v\n", resp)
 		if err != nil {
-			fmt.Println("[Error]DecodeXMLHttpResponse err:", err.Error())
+			fmt.Println("[Info]postXML DecodeXMLHttpResponse err:", err.Error())
 		}
 		return nil, true, fmt.Errorf("http.Status: %s", httpResp.Status)
 	}
