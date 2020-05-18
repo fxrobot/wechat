@@ -12,8 +12,8 @@ import (
 	"net/url"
 
 	"github.com/fxrobot/rand"
-	"github.com/chanxuehong/session"
-	"github.com/chanxuehong/sid"
+	"github.com/fxrobot/session"
+	"github.com/fxrobot/sid"
 	mpoauth2 "github.com/fxrobot/wechat/mp/oauth2"
 	"github.com/fxrobot/wechat/oauth2"
 )

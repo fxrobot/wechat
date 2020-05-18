@@ -32,11 +32,11 @@ http://localhost:8080/
 即可查看文档
 
 ## 捐助
-![微信支付](https://github.com/chanxuehong/wechat/blob/v2/weixin_pay.png)
-![支付宝](https://github.com/chanxuehong/wechat/blob/v2/alipay.png)
+![微信支付](https://github.com/fxrobot/wechat/blob/v2/weixin_pay.png)
+![支付宝](https://github.com/fxrobot/wechat/blob/v2/alipay.png)
 
 ## 捐助者列表
-[点击查看](https://github.com/chanxuehong/wechat/blob/v2/donors.md)
+[点击查看](https://github.com/fxrobot/wechat/blob/v2/donors.md)
 
 ## 授权(LICENSE)
 [wechat is licensed under the Apache Licence, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)

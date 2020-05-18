@@ -90,8 +90,8 @@ func (clt *Client) PostXML(url string, req map[string]string) (resp map[string]s
 	case "https://api.mch.weixin.qq.com/mmpaymkttransfers/promotion/transfers", "https://api2.mch.weixin.qq.com/mmpaymkttransfers/promotion/transfers", // 企业付款
 		"https://api.mch.weixin.qq.com/mmpaymkttransfers/sendredpack", "https://api2.mch.weixin.qq.com/mmpaymkttransfers/sendredpack", // 发放普通红包
 		"https://api.mch.weixin.qq.com/mmpaymkttransfers/sendgroupredpack", "https://api2.mch.weixin.qq.com/mmpaymkttransfers/sendgroupredpack": // 发放裂变红包
-		// TODO(chanxuehong): 这几个接口没有标准的 appid 和 mch_id 字段，需要用户在 req 里填写全部参数
-		// TODO(chanxuehong): 通读整个支付文档, 可以的话重新考虑逻辑
+		// TODO(fxrobot): 这几个接口没有标准的 appid 和 mch_id 字段，需要用户在 req 里填写全部参数
+		// TODO(fxrobot): 通读整个支付文档, 可以的话重新考虑逻辑
 	default:
 		if req["appid"] == "" {
 			req["appid"] = clt.appId
@@ -142,7 +142,7 @@ RETRY:
 	resp, needRetry, err := clt.postXML(url, body, reqSignType)
 	if err != nil {
 		if needRetry && !hasRetried {
-			// TODO(chanxuehong): 打印错误日志
+			// TODO(fxrobot): 打印错误日志
 			hasRetried = true
 			url = switchRequestURL(url)
 			goto RETRY
@@ -224,7 +224,7 @@ func (clt *Client) postXML(url string, body []byte, reqSignType string) (resp ma
 	// 验证签名
 	signatureHave := resp["sign"]
 	if signatureHave == "" {
-		// TODO(chanxuehong): 在适当的时候更新下面的 case
+		// TODO(fxrobot): 在适当的时候更新下面的 case
 		switch url {
 		default:
 			return nil, false, ErrNotFoundSign
